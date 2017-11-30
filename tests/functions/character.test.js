@@ -1,6 +1,6 @@
 const test = require('tape');
-const { result } = require('../../common/lang/helpers');
-const { wrap } = require('../../common/lang/type');
+const { result } = require('../../src/helpers');
+const { wrap } = require('../../src/type');
 
 test('Uppercase', (assert) => {
   assert.deepEqual(
