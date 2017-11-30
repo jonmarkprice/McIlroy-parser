@@ -1,5 +1,5 @@
 const test = require('tape');
-const display = require('../common/lang/display');
+const display = require('../src/display');
 
 test('should print characters with quotes.', (assert) => {
   assert.equal(display("a"), "'a'");

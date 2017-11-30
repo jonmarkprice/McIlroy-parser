@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node cli.js",
-    "test": "tape 'tests/**.test.js'"
+    "test": "tape 'tests/**/*.test.js'"
   },
   "repository": {
     "type": "git",

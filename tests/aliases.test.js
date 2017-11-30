@@ -1,11 +1,11 @@
 // Write unit tests for aliases, should get 'Not parsable'
 //import { run } from './helpers';
 //const { run } = require('./helpers');
-const { result } = require('../common/lang/helpers');
-const { wrap } = require('../common/lang/type');
-const { parseStack } = require('../common/lang/parse');
-const { tokenize_ } = require('../common/lang/tokenize');
-const { parseProgram } = require('../common/lang/program');
+const { result } = require('../src/helpers');
+const { wrap } = require('../src/type');
+const { parseStack } = require('../src/parse');
+const { tokenize_ } = require('../src/tokenize');
+const { parseProgram } = require('../src/program');
 const { Right, Left } = require('sanctuary');
 const test = require('tape');
 

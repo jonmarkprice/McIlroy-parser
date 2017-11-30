@@ -1,10 +1,10 @@
 const test = require('tape');
-const { result, stepList } = require('../common/lang/helpers');
-const { wrap } = require('../common/lang/type');
-const { tokenize_ } = require('../common/lang/tokenize');
-const { parseStack } = require('../common/lang/parse');
+const { result, stepList } = require('../src/helpers');
+const { wrap } = require('../src/type');
+const { tokenize_ } = require('../src/tokenize');
+const { parseStack } = require('../src/parse');
 const { Right, Left } = require('sanctuary');
-const { parseProgram } = require('../common/lang/program');
+const { parseProgram } = require('../src/program');
 
 // This file is for larger tests that do not target a specific function but
 // rather implement somewhat more interesting programs.
