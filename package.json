@@ -1,0 +1,31 @@
+{
+  "name": "mcilroy-parser",
+  "version": "0.5.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node cli.js",
+    "test": "tape 'tests/**.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonmarkprice/mcilroy-parser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonmarkprice/mcilroy-parser/issues"
+  },
+  "homepage": "https://github.com/jonmarkprice/mcilroy-parser#readme",
+  "devDependencies": {
+    "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0",
+    "sanctuary": "^0.13.2"
+  }
+}
