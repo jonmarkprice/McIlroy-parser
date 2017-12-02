@@ -4,9 +4,8 @@ const R = require('ramda');
 const { parseStack, print, createSteps } = require('./parse');
 const { tokenize_ } = require('./tokenize');
 
-function parseProgram(program) {
-  const tokens = program.map(tokenize_);
-  const init = {
+function parser(tokens) {
+   const init = {
     stack: Right([]),
     first: true,
     index: 0
@@ -27,6 +26,17 @@ function parseProgram(program) {
   }
   const steps = S.prepend(firstStep, createSteps(tokens, acc.steps));
   return {stack: acc.stack, steps};
+
 }
 
-module.exports = { parseProgram  };
+// Convience only
+/**
+ * @param {Literal[]} input
+ * @return {stack: Either<Token[]>, steps: string[][] }
+ */
+function parseProgram(program) {
+  const tokens = program.map(tokenize_);
+  return parser(tokens);
+ }
+
+module.exports = { parseProgram, parser };
